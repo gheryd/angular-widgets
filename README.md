@@ -1,0 +1,2 @@
+# angular-widgets
+widget management
