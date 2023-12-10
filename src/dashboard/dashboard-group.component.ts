@@ -5,14 +5,14 @@ import { WidgetService } from "src/widget-api/widgets.service";
 
 @Component({
     template: `
-        <div style="border: 1px solid gray;">
+        <div class="dashboard-group">
         
-            <div style="display: flex; justify-content:space-between; background-color: gray; color: white; padding: 5px; margin-bottom: 10px;">
-                <div style="margin-right: 50px;">Group: {{group}}</div>
+            <div class="title-bar">
+                <div class="title">Group: {{group}}</div>
                 <button (click)="onReload()">reload</button>
             </div>
 
-            <div style="display: flex; flex-direction: row; gap: 10px;padding: 10px;flex-wrap:wrap;">
+            <div class="content">
                 <div *ngFor="let wCfg of widgets">
                     <ng-container [widget]="wCfg"></ng-container>
                 </div>

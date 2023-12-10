@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+.dashboard-group {
+    border: 1px solid gray;
+
+}
+
+.dashboard-group .title-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.title-bar .title {
+    margin-right: 50px;
+}
+
+.dashboard-group .content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+
+}

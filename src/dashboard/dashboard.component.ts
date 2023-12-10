@@ -7,8 +7,8 @@ import { WidgetService } from "src/widget-api/widgets.service";
         <div style="display: flex; gap: 10px;">
             <dashboard-group [group]="WidgetGroup.DEFAULT"></dashboard-group>
             <dashboard-group [group]="WidgetGroup.OTHER"></dashboard-group>
+            <dashboard-free-group></dashboard-free-group>
         </div>
-        
     `,
     selector: "dashboard"
 })
